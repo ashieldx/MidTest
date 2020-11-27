@@ -93,7 +93,6 @@ void printAll(){
 }
 void check(int n, int m) {
     curr = head;
-    printf("Need %d more cure\n", n-m);
     if(n-m == 0){
         printf("There is enough cure\n");
         return;
@@ -101,6 +100,7 @@ void check(int n, int m) {
         printf("All patients get the cure, %d cure left\n", m-n);
         return;
     }else{
+        printf("Need %d more cure\n", n-m);
         while(m){
             popHead();
             m--;
