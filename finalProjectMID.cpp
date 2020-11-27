@@ -101,10 +101,9 @@ void check(int n, int m) {
         printf("All patients get the cure, %d cure left\n", m-n);
         return;
     }else{
-        int a = n-m;
-        while(a){
-            popHead;
-            a--;
+        while(m){
+            popHead();
+            m--;
         }
         printAll();
     }
