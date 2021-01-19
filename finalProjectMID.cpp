@@ -81,6 +81,7 @@ void pushMid(char *name, int date, char *month, int year) {
         }
     }
 }
+
 void printAll(){
   if(!head) {
     return;
@@ -91,6 +92,7 @@ void printAll(){
     curr = curr->next;
   }
 }
+
 void check(int n, int m) {
     curr = head;
     if(n-m == 0){
